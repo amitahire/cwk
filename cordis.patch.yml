@@ -1,0 +1,8 @@
+# English edition bundle patch of zcode-agent-picker (upstream: Ok541151/cwk).
+# Same structure as upstream; a distinct insert id and package name so this
+# edition can be enabled/disabled independently of the original. Enable only
+# ONE edition at a time: both register the same composer control and HTTP
+# routes, and both manage the same roster file ($DSH_HOME/agent-picker.agents.json).
+- insert:
+    - id: agent-picker-english
+      name: '@local/zcode-agent-picker-english'

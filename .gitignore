@@ -1,0 +1,20 @@
+# Dependencies and local test facilities
+node_modules/
+*.log
+npm-debug.log*
+
+# Local dev/test artifacts
+.tmp/
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Machine-local notes (not published) — keeps the upstream filename (说明.md) so
+# this ignore list stays interchangeable with the original repository's.
+说明.md
+NOTES.md
+.npmrc

@@ -1,0 +1,13 @@
+# Store everything as LF so cross-platform line-ending drift cannot mangle diffs
+* text=auto eol=lf
+
+# Explicitly treat as text
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.md   text eol=lf
+
+# Binary as git sees it
+*.png binary
+*.jpg binary

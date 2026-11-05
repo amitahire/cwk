@@ -1,0 +1,24 @@
+{
+  "name": "@local/zcode-agent-picker-english",
+  "version": "0.6.2-en.1",
+  "private": true,
+  "description": "English edition of zcode-agent-picker by Ok541151: pick an external Agent CLI (Claude Code / Codex / Qwen / Gemini / Aider / Goose / Hermes / OpenClaw / Ollama...) as the session's default executor, the way you pick a reasoning-effort tier. The agent catalog is data-driven: adding a new Agent is one data entry, not a code change.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "zcode": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "inject": ["@deepseek-ai/zcode-client-ui-conversation"] }
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/Ok541151/cwk.git" },
+  "homepage": "https://github.com/Ok541151/cwk#readme",
+  "bugs": { "url": "https://github.com/Ok541151/cwk/issues" },
+  "files": ["CHANGELOG.md", "lib", "agents.json", "cordis.patch.yml", "README.md", "LICENSE"],
+  "keywords": ["zcode", "zcode-plugin", "agent", "agent-picker", "cli", "claude-code", "codex", "qwen", "gemini", "ollama", "english-edition"],
+  "author": "Ok541151 (original zcode-agent-picker); English edition maintained locally",
+  "license": "MIT"
+}
